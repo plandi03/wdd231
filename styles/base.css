@@ -1,4 +1,6 @@
-
+.gallery {
+    grid-template-columns: repeat(var(--num-cols, 1), 1fr);
+}
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
