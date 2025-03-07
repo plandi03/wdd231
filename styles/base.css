@@ -275,8 +275,8 @@ text-align: left;
 }
 
 .courseNoComplete {
-    background-color: #192a5a;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .courseComplete {

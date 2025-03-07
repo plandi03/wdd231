@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description:
                 "This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.",
             technology: ["C#"],
-            completed: true,
+            completed: false,
         },
         {
             subject: "WDD",
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description:
                 "This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.",
             technology: ["HTML", "CSS", "JavaScript"],
-            completed: true,
+            completed: false,
         },
         {
             subject: "WDD",
