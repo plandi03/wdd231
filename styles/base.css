@@ -24,7 +24,7 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
     margin-top: 1rem;
 }
 
@@ -60,17 +60,17 @@ main {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 .card-01 {
-    display: grid;
+    display: absolute;
     grid-template-columns: auto;
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: auto auto auto;
 }
 
 .card-01 {
-    grid-column: 1;
-    grid-row: 1;
+    display: absolute;
     padding: 20px;
     background-color: rgb(192, 192, 255);
     color: var(--headline-color-on-color);
@@ -86,66 +86,22 @@ main {
 }
 
 .story {
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    display: absolute;
 }
 
-.story p {
-grid-column:  1;
-color: var(--paragraph-color-on-white);
-margin: auto;
-text-align: left;
-}
 .story img {
-    grid-column: 2;
+    display: absolute;
     margin: auto;
 }
 
-.bolivia {
-    grid-row: 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 15px;
-}
-
-.bolivia h3 {
-    font-size: 25px;
-    grid-column: 1 / 3;
-    grid-row: 1;
-    color: var(--headline-color-on-white);
-    background-color: var(--accent3-color);
-    margin: 0;
-    padding: 10px ;
-    text-align: center;
-    border-bottom: rgb(106, 104, 104) 3px solid ;
-}
-.bolivia img {  
-    grid-column: 1;
-    grid-row: 2;
-    margin: auto;
-
-}
-
-.bolivia p {
-    grid-column: 2;
-    grid-row: 2;
-    color: var(--paragraph-color-on-white);
-    margin: auto;
-    text-align: left;
-}
 .card-02 {
-    display: grid;
+    display: absolute;
     grid-template-columns: auto;
-    grid-template-rows: auto 1fr;
-    gap: 20px;
     grid-column: 2;
     grid-row: 1;
     padding: 20px;
     background-color: rgb(192, 192, 255);
-    color: var(--headline-color-on-color);
+    color: black;
     text-align: center;
 }
 
