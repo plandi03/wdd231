@@ -217,6 +217,7 @@ main {
     width: 80%;
     padding: 10px;
     border-radius: 5px;
+    margin: 10px;;
 }
 
 .course {
@@ -338,5 +339,12 @@ footer {
     padding: 1rem;
 }
 
+.boxcertificate01 {
+    width: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
 
 
