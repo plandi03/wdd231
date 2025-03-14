@@ -82,3 +82,30 @@ footer {
 footer p {
     margin: 0.5rem 0;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    #directory {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    #directory {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
