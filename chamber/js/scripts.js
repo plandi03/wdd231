@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <img src="images/${member.image}" alt="${member.name}">
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
+                <p>${member.sector}</p>
                 <p>${member.phone}</p>
                 <a href="${member.website}" target="_blank">Visit Website</a>
             `;

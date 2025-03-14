@@ -1,26 +1,74 @@
 [
     {
-        "name": "Company One",
-        "address": "123 Main St, City, State",
-        "phone": "123-456-7890",
-        "website": "http://companyone.com",
-        "image": "company1.jpg",
+        "name": "Yacimientos Petrolíferos Fiscales Bolivianos (YPFB)",
+        "sector": "Hidrocarburos",
+        "address": "Avenida Mariscal Santa Cruz No. 906, La Paz, Bolivia",
+        "phone": "+591 2 237 1000",
+        "website": "http://www.ypfb.gob.bo",
+        "image": "ypfb.webp",
         "membershipLevel": 1
     },
     {
-        "name": "Company Two",
-        "address": "456 Elm St, City, State",
-        "phone": "987-654-3210",
-        "website": "http://companytwo.com",
-        "image": "company2.jpg",
+        "name": "Banco Nacional de Bolivia (BNB)",
+        "sector": "Banking",
+        "address": "Calle Sucre No. 340, Sucre, Bolivia",
+        "phone": "+591 4 645 9000",
+        "website": "http://www.bnb.com.bo",
+        "image": "BNB.WebP",
         "membershipLevel": 2
     },
     {
-        "name": "Company Three",
-        "address": "789 Oak St, City, State",
-        "phone": "555-555-5555",
-        "website": "http://companythree.com",
-        "image": "company3.jpg",
+        "name": "Boliviana de Aviación (BoA)",
+        "sector": "Aviation",
+        "address": "Avenida Simón López No. 0591, Cochabamba, Bolivia",
+        "phone": "+591 4 414 2000",
+        "website": "http://www.boa.bo",
+        "image": "boa.webp",
         "membershipLevel": 3
+    },
+    {
+        "name": "Cervecería Boliviana Nacional (CBN)",
+        "sector": "Beverages",
+        "address": "Avenida Montes No. 500, La Paz, Bolivia",
+        "phone": "+591 2 244 4444",
+        "website": "http://www.cbn.bo",
+        "image": "cbn.webp",
+        "membershipLevel": 4
+    },
+    {
+        "name": "Banco de Crédito de Bolivia (BCP)",
+        "sector": "Banking",
+        "address": "Calle 15 de Calacoto No. 8008, La Paz, Bolivia",
+        "phone": "+591 2 217 5000",
+        "website": "http://www.bcp.com.bo",
+        "image": "bcp.webp",
+        "membershipLevel": 5
+    },
+    {
+        "name": "Banco BISA",
+        "sector": "Banking",
+        "address": "Avenida 16 de Julio No. 1628, La Paz, Bolivia",
+        "phone": "+591 2 244 3434",
+        "website": "http://www.bisa.com",
+        "image": "bisa.webp",
+        "membershipLevel": 6
+    },
+    {
+        "name": "Pil Andina S.A.",
+        "sector": "Dairy Products",
+        "address": "Avenida Blanco Galindo Km 5.5, Cochabamba, Bolivia",
+        "phone": "+591 4 426 8000",
+        "website": "http://www.pil.com.bo",
+        "image": "pil.webp",
+        "membershipLevel": 7
+    },
+    {
+        "name": "Embol S.A. (Coca-Cola Bolivia)",
+        "sector": "Beverages",
+        "address": "Avenida Blanco Galindo Km 5, Cochabamba, Bolivia",
+        "phone": "+591 4 426 9000",
+        "website": "http://www.embol.com.bo",
+        "image": "enbol.webp",
+        "membershipLevel": 8
     }
 ]
