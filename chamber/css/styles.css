@@ -1,25 +1,27 @@
 /* Normalize CSS */
 @import url('normalize.css');
 
+/* Define color palette in :root */
+:root {
+    --primary-color: #1b101e;
+    --secondary-color: #1f3a73;
+    --background-color: #fffef5;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color: #192a5a;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-header {
-    background-color: #192a5a;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -45,21 +47,21 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #1f3a73;
+    background-color: var(--secondary-color);
 }
 
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 1rem;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -71,8 +73,8 @@ main {
 }
 
 footer {
-    background-color: #192a5a;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     text-align: center;
     padding: 1rem;
 }
