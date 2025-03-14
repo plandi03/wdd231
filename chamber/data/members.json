@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Company One",
+        "address": "123 Main St, City, State",
+        "phone": "123-456-7890",
+        "website": "http://companyone.com",
+        "image": "company1.jpg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Company Two",
+        "address": "456 Elm St, City, State",
+        "phone": "987-654-3210",
+        "website": "http://companytwo.com",
+        "image": "company2.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Company Three",
+        "address": "789 Oak St, City, State",
+        "phone": "555-555-5555",
+        "website": "http://companythree.com",
+        "image": "company3.jpg",
+        "membershipLevel": 3
+    }
+    // Add more companies as needed
+]
