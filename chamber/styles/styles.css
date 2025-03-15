@@ -38,11 +38,13 @@ header h1 {
     margin: 0;
 }
 
+
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 2px;
     display: flex;
-    justify-content: grid-end;
+    justify-content: flex-end;
+    align-content: flex-end;
     gap: 1rem;
 }
 
