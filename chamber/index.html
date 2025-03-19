@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Landivar">
+    <meta name="description" content="Welcome to the Chamber of Commerce - WDD 231 Project by Pablo Landivar">
+    <title>Chamber of Commerce Home</title>
+    <script src="scripts/homepage.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="images/Logo-bolivia-paw-web-300x121-simplified.png" type="image/png">
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:description" content="Join the Chamber of Commerce and grow your business!">
+    <meta property="og:url" content="https://plandi03.github.io/wdd231/chamber/index.html">
+</head>
+<body>
+    <header>
+        <img src="images/Logo-bolivia-paw-web-300x121-simplified.png" alt="Chamber of Commerce Logo">
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Join Section -->
+        <section class="join">
+            <h2>Join the Chamber</h2>
+            <p>Become a part of our growing community and enjoy exclusive benefits for your business.</p>
+            <a href="join.html" class="cta-button">Join Now</a>
+        </section>
+
+        <!-- Two Columns: Current Events and Weather -->
+        <section class="two-columns">
+            <div class="events">
+                <h2>Current Events</h2>
+                <ul>
+                    <li><strong>Business Networking Night:</strong> March 25, 2025</li>
+                    <li><strong>Community Cleanup Day:</strong> April 10, 2025</li>
+                    <li><strong>Annual Business Expo:</strong> May 15, 2025</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <div id="weather-widget">
+                    <!-- Weather data will be dynamically inserted here -->
+                    <p>Loading weather data...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Spotlights Section -->
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <img src="images/company1.jpg" alt="Company 1">
+                <h3>Company One</h3>
+                <p>Leading the way in innovation and community service.</p>
+            </div>
+            <div class="spotlight">
+                <img src="images/company2.jpg" alt="Company 2">
+                <h3>Company Two</h3>
+                <p>Providing exceptional services to our local businesses.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Pablo Landivar, WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
