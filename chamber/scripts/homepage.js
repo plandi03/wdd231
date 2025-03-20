@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Fetch and display weather data
     async function fetchWeather() {
-        const city = "Tarija"; // City name
-        const apiKey = "bef1a25e7ff4c8c79e8bc87c215dd518"; // Provided API key
+        const city = "Tarija";
+        const apiKey = "bef1a25e7ff4c8c79e8bc87c215dd518";
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
         try {
