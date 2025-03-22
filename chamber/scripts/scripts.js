@@ -48,9 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
 
     fetchMembers();
-});
 
-document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");
     const nav = document.querySelector("nav");
 

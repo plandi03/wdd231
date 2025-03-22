@@ -76,13 +76,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fetch weather and spotlight data
     fetchWeather();
     fetchSpotlights();
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const nav = document.querySelector("nav");
-
-    hamburger.addEventListener("click", () => {
-        nav.classList.toggle("active"); // Alternar la clase 'active' para mostrar/ocultar el menú
-    });
-});
+    document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector("nav");
+    
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("active"); // Alternar la clase 'active' para mostrar/ocultar el menú
+        });
+    })});
