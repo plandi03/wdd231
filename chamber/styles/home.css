@@ -10,13 +10,19 @@
     --white: #ffffff;
 }
 
+/* Global box-sizing */
+* {
+    box-sizing: border-box;
+}
 
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
 }
 
 header {
@@ -38,7 +44,7 @@ header h1 {
     margin: 0;
 }
 
-
+/* Navigation styles */
 nav ul {
     list-style: none;
     padding: 2px;
@@ -126,6 +132,10 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center; /* Centrar el contenido */
+    display: flex; /* Usar flexbox para centrar */
+    flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
 }
 
 .spotlights .spotlight img {
@@ -133,6 +143,7 @@ h2 {
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem; /* Espacio debajo de la imagen */
+    display: block; /* Asegura que la imagen sea un bloque */
 }
 
 footer {
@@ -193,8 +204,9 @@ nav {
         position: absolute;
         top: 100%;
         right: 0;
+        left: 0; /* Asegúrate de que el menú ocupe todo el ancho */
         background-color: var(--primary-color);
-        width: 100%;
+        width: 100%; /* Asegúrate de que el ancho sea del 100% */
         display: none; /* Ocultar el menú por defecto */
         flex-direction: column;
         align-items: center;
@@ -213,4 +225,11 @@ nav {
         width: 100%;
         text-align: center;
     }
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
