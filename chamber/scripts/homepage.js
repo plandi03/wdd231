@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // Update the spotlight section
             const spotlightSection = document.querySelector(".spotlights");
             spotlightSection.innerHTML = `
-                <h2>Company Spotlights</h2>
                 ${selectedMembers
                     .map(
                         (member) => `
@@ -77,4 +76,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fetch weather and spotlight data
     fetchWeather();
     fetchSpotlights();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector("nav");
+
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("active"); // Alternar la clase 'active' para mostrar/ocultar el menú
+    });
 });

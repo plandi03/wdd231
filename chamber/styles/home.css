@@ -65,8 +65,13 @@ nav a:hover {
     background-color: var(--secondary-color);
     color: var(--white);
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin: 20px;
     border-radius: 8px;
+    background-image: url('../images/hero.webp'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    max-width: calc(100% - 40px); /* Ensure it stays 20px away from both sides */
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .join .cta-button {
@@ -99,27 +104,35 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+h2 {
+    margin-top: 0;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
 /* Spotlights Section */
 .spotlights {
-    text-align: center;
+    display: grid; /* Usar grid para organizar los elementos */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 2rem; /* Espacio entre las columnas */
     margin-bottom: 2rem;
 }
 
 .spotlights .spotlight {
-    display: inline-block;
-    width: 45%;
-    margin: 1rem;
     background-color: var(--background-color);
-    padding: 1rem;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar el contenido */
 }
 
 .spotlights .spotlight img {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
     border-radius: 8px;
+    margin-bottom: 1rem; /* Espacio debajo de la imagen */
 }
 
 footer {
@@ -131,4 +144,73 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none; /* Oculto por defecto */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Mostrar el botón hamburger */
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--primary-color);
+        width: 100%;
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.active {
+        display: flex; /* Mostrar el menú cuando esté activo */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        text-align: center;
+    }
 }
