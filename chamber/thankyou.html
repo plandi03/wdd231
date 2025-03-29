@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Landivar">
+    <meta name="description" content="Thank you for joining the Chamber of Commerce">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="icon" href="images/Logo-bolivia-paw-web-300x121-simplified.png" type="image/png">
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/Logo-bolivia-paw-web-300x121-simplified.png" alt="Chamber of Commerce Logo">
+        <h1>Chamber of Commerce</h1>
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776; <!-- Unicode for hamburger icon -->
+        </button>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="thank-you-message">
+            <h2>Thank You for Joining the Chamber!</h2>
+            <p>We have received your application. Below is the information you submitted:</p>
+            <div class="form-data">
+                <p><strong>First Name:</strong> <span id="firstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+                <p><strong>Email Address:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+                <p><strong>Business/Organization Name:</strong> <span id="organization"></span></p>
+                <p><strong>Membership Level:</strong> <span id="membershipLevel"></span></p>
+                <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
+            </div>
+            <p>If any of the information above is incorrect, please <a href="contact.html">contact us</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Pablo Landivar, WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

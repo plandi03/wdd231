@@ -50,9 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchMembers();
 
     const hamburger = document.querySelector(".hamburger");
-    const nav = document.querySelector("nav");
+    const navLinks = document.querySelector(".nav-links");
 
+    // Toggle the navigation menu on hamburger click
     hamburger.addEventListener("click", () => {
-        nav.classList.toggle("active"); // Alternar la clase 'active' para mostrar/ocultar el menú
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open");
     });
 });
+

@@ -1,0 +1,305 @@
+/* Use the same color palette */
+:root {
+    --primary-color: #1b101e;
+    --secondary-color: #1f3a73;
+    --background-color: #fffef5;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+/* General styles for the form */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Hamburger button styles */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Hidden by default for larger screens */
+}
+
+.hamburger.open {
+    color: var(--secondary-color); /* Optional: Change color when active */
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* Membership form styles */
+.membership-form {
+    margin: 2rem auto;
+    max-width: 600px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.membership-form h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.membership-form form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.membership-form form input,
+.membership-form form select,
+.membership-form form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.membership-form form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership-form form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Membership levels section */
+.membership-levels {
+    margin: 2rem auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.membership-levels h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.membership-levels .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.card button {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.modal-content button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .membership-levels .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger button on small screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show navigation links when active */
+    }
+
+    .nav-links a {
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
