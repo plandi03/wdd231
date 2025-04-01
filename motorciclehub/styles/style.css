@@ -73,6 +73,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: var(--secondary-color);
+    color: var(--accent-color);
     border-radius: 4px;
 }
 
@@ -91,6 +92,7 @@ button {
 
 button:hover {
     background-color: var(--secondary-color);
+    
 }
 
 /* Button styles */
