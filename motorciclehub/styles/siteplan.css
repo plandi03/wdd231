@@ -1,0 +1,66 @@
+/* Define the color palette */
+:root {
+    --primary-color: #D32F2F; /* Red */
+    --text-color: #333333; /* Black */
+    --background-color: #e2e2e2; /* White */
+}
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* Section styles */
+section {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+section img {
+    max-width: 200px;
+    height: auto;
+    margin: 1rem 0;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    margin-top: 2rem;
+}
