@@ -1,0 +1,116 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.visitor-message {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Grid layout for discover cards */
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-grid .card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.discover-grid .card:hover {
+    transform: scale(1.05);
+}
+
+.discover-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.discover-grid h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.discover-grid address {
+    font-style: normal;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.discover-grid p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.discover-grid .learn-more {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.discover-grid .learn-more:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive grid for medium screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Responsive grid for large screens */
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Parque Bolívar",
+        "image": "images/parque_bolivar.webp",
+        "address": "Sucre, Bolivia",
+        "description": "A European-style park in Sucre, featuring a miniature replica of the Eiffel Tower and a large playground."
+    },
+    {
+        "title": "Parque Cretácico",
+        "image": "images/parque_cretacico.webp",
+        "address": "Sucre, Bolivia",
+        "description": "A dinosaur-themed park adjacent to the Cal Orck'o paleontological site, showcasing life-sized dinosaur models and thousands of fossilized footprints."
+    },
+    {
+        "title": "Mercado Central de Sucre",
+        "image": "images/mercador_central.webp",
+        "address": "Sucre, Bolivia",
+        "description": "A bustling market offering a variety of fresh produce, local delicacies, and traditional crafts."
+    },
+    {
+        "title": "Iglesia de La Merced",
+        "image": "images/la_merced.webp",
+        "address": "Sucre, Bolivia",
+        "description": "A historic church known for its baroque architecture and significant religious artworks."
+    },
+    {
+        "title": "Cathedral Basilica of Our Lady of Peace",
+        "image": "images/bascilica.webp",
+        "address": "La Paz, Bolivia",
+        "description": "A neoclassical cathedral located in Murillo Square, notable for its baroque elements and historical significance."
+    },
+    {
+        "title": "La Rufina Restaurant",
+        "image": "images/rufina.webp",
+        "address": "La Paz, Bolivia",
+        "description": "A renowned restaurant that elevates traditional Bolivian street food to fine dining, recognized by the 50 Best Discovery list."
+    },
+    {
+        "title": "Huayna Potosí",
+        "image": "images/Huayna_Potosí_al_atarceder.webp",
+        "address": "La Paz Department, Bolivia",
+        "description": "A popular mountain for climbers, offering challenging ascents and breathtaking views of the Cordillera Real."
+    },
+    {
+        "title": "Salar de Uyuni",
+        "image": "images/salar_uyuni.webp",
+        "address": "Potosí Department, Bolivia",
+        "description": "The world's largest salt flat, known for its vast white expanse and mirror-like surface during the rainy season."
+    }
+]
