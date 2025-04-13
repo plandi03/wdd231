@@ -7,6 +7,7 @@
     <meta name="description" content="Motorcycle Enthusiasts Hub - A platform for motorcycle lovers">
     <title>Motorcycle Enthusiasts Hub</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/carousel.js" defer></script>
     <link rel="icon" href="images/vintage-motorcycle-concept_997622-2101.webp" type="image/png">
 </head>
 <body>
@@ -29,6 +30,7 @@
         <section id="home">
             <h2>Welcome to the Motorcycle Enthusiasts Hub</h2>
             <p>Discover the freedom and adventure of motorcycles. This site is dedicated to showcasing the beauty of motorcycles and connecting enthusiasts from around the world.</p>
+            <a href="contact.html" class="button">Contact Us</a>
         </section>
 
         <!-- About Section -->
@@ -38,14 +40,20 @@
             <a href="about.html" class="button">Learn More About Us</a>
         </section>
 
-        <!-- Gallery Section -->
+        <!-- Gallery Section with Carousel -->
         <section id="gallery">
             <h2>Gallery</h2>
-            <p>Explore our collection of stunning motorcycle images. Stay tuned for an interactive image viewer coming soon!</p>
-            <div class="gallery-placeholder">
-                <p>Gallery images will be displayed here.</p>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="images/harley_street_glide.webp" alt="Harley Davidson" class="carousel-image">
+                    <img src="images/ducati_panigale_v4.webp" alt="Ducati Panigale" class="carousel-image">
+                    <img src="images/kawasaki_ninja_zx10r.webp" alt="Kawasaki Ninja" class="carousel-image">
+                    <img src="images/bmw_r1250gs.webp" alt="BMW R1250 GS" class="carousel-image">
+                    <img src="images/yamaha_r1.webp" alt="Yamaha R1" class="carousel-image">
+                </div>
+                <button class="carousel-button prev">❮</button>
+                <button class="carousel-button next">❯</button>
             </div>
-            <a href="gallery.html" class="button">View the Gallery</a>
         </section>
     </main>
 
